@@ -45,7 +45,7 @@ def remove_question(index):
     questions.pop(index)
     answers.pop(index)
 
-def clientthread(conn):
+def clientthread(conn,nickname):
     score = 0
     conn.send("Welcome to this quiz game!".encode('utf-8'))
     conn.send("You will receive a question. The answer to that question should be one of a, b, c or d\n".encode('utf-8'))
